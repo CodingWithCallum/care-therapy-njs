@@ -3,7 +3,7 @@ import Image from "next/image";
 const Hero = () => {
 return (
         <section className="py-5 my-10 relative pt-18 lg:pt-18">
-            <div className="mx-auto lg:max-w-7xl w-full px-3 sm:px-10 md:px-12 lg:px-5 flex flex-col lg:flex-row gap-10 lg:gap-12">
+            <div className="mt-5 mx-auto lg:max-w-7xl w-full px-3 sm:px-10 md:px-12 lg:px-5 flex flex-col lg:flex-row gap-10 lg:gap-12">
                 <div className="absolute w-full lg:w-1/2 inset-y-0 lg:right-0 hidden lg:block">
                     <span className="absolute -left-6 md:left-4 top-24 lg:top-28 w-24 h-24 rotate-90 skew-x-12 rounded-3xl bg-green-400 blur-xl opacity-60 lg:opacity-95 lg:block hidden"/>
                     <span className="absolute right-4 bottom-12 w-24 h-24 rounded-3xl bg-blue-600 blur-xl opacity-80"/>
@@ -15,12 +15,11 @@ return (
    font-bold text-gray-900">
                         <span className="text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-20% via-blue-600 via-30% to-green-600">CARE Therapy<br/></span>
                     </h1>
-                    <h2 className="text-1xl sm:text-2xl md:text-3xl xl:text-4xl
+                    <h2 className="mt-5 text-1xl sm:text-2xl md:text-3xl xl:text-4xl
    font-bold text-gray-900">Helping you move better, live stronger, and perform with confidence.</h2>
-                    <p className="mt-8 text-gray-700 dark:text-gray-300">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores repellat perspiciatis aspernatur
-                        quis voluptatum porro incidunt,
-                        libero sequi quos eos velit
+                    <p className="mt-5 text-gray-700 dark:text-gray-300">
+                        CARE Therapy aims to bridge the gap by providing evidence-based adapted therapeutic and rehabilitative exercise. Striving for excellence, we aspire
+                        to become a leading provider of physiotherapy and rehabilitation services in the region, empowering individuals to achieve their optimal health and well-being.
                     </p>
                     <div className="flex justify-center items-center flex-wrap mx-auto gap-6 mt-6">
                       <Link href="/OurStory" className="flex items-center h-12 px-6 rounded-full bg-teal-600 text-white border border-teal-500">Our Story</Link>
@@ -28,7 +27,7 @@ return (
                     </div>
                 </div>
                 <div className="flex flex-1 lg:w-1/2 lg:h-auto relative lg:max-w-none lg:mx-0 mx-auto max-w-3xl">
-                    <Image src="/image1.webp" alt="Hero image" width={2350} height={2359} className="lg:absolute lg:w-full lg:h-full rounded-3xl object-cover lg:max-h-none max-h-96" />
+                    <Image src="/physio_hand.jpg" alt="Hero image" width={2350} height={2359} className="lg:absolute lg:w-full lg:h-full rounded-3xl object-cover lg:max-h-none max-h-96" />
                 </div>
             </div>
         </section>

@@ -3,7 +3,8 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   /* config options here */
   images: {
-    remotePatterns: [{hostname: "upload.wikimedia.org"}],
+    domains: ["media.geeksforgeeks.org"],
+    remotePatterns: [{hostname: "media.geeksforgeeks.org"}],
     },
   };
 

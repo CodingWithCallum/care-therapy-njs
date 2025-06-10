@@ -1,63 +1,108 @@
-import Image from "next/image"
- 
-const TestimonialSection = () => {
-return (
-    <section className="py-5 my-10">
-        <div className="max-w-7xl mx-auto px-5 sm:px-10 md:px-12 lg:px-5 space-y-12">
-            <div className="mx-auto max-w-2xl text-center">
-                <h1 className="font-bold text-gray-800 dark:text-white text-3xl">Client’s Say About Us</h1>
-            </div>
-            <div className="relative flex flex-col">
-                <div className="p-6 w-full mx-auto max-w-4xl md:p-10 rounded-2xl bg-white dark:bg-gray-950 border border-gray-100/10 dark:border-gray-900 shadow-2xl shadow-gray-700/40 dark:shadow-none flex flex-col items-center justify-center text-center space-y-6 md:space-y-8">
-                    <div className="space-y-2 text-center flex-1">
-                        <h2 className="text-xl font-semibold leading-none text-gray-800 dark:text-gray-200">
-                            John Doe
-                        </h2>
-                        <p className="text-sky-700 dark:text-sky-300">
-                            SEO Kelasi-AI SARL
-                        </p>
-                    </div>
-                    <p className="font-medium text-gray-700 dark:text-gray-300 max-w-md">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum at ipsa pariatur culpa iste dolore
-                        aliquid officia modi quas vel inventore animi, error commodi distinctio eum accusamus?
-                        Accusantium, tempora quisquam!
-                    </p>
-                    <div className="mx-auto flex items-center gap-2">
-                        <span className="text-yellow-600 text-2xl flex">
-                            ★
-                        </span>
-                        <span className="text-yellow-600 text-2xl flex">
-                            ★
-                        </span>
-                        <span className="text-yellow-600 text-2xl flex">
-                            ★
-                        </span>
-                        <span className="text-yellow-600 text-2xl flex">
-                            ★
-                        </span>
-                        <span className="text-yellow-600 text-2xl flex">
-                            ★
-                        </span>
-                    </div>
+'use client';
+import React, { useState } from 'react';
+import Image from 'next/image';
+
+const testimonials = [
+  {
+    name: 'Callum Barry',
+    role: 'Software Developer',
+    quote: `Here is space for a review from each client would appear
+            the formatting for this is direct and not by P`,
+    image: '',
+  },
+  {
+    name: 'Tara Pohl',
+    role: 'Medical Officer',
+    quote: `It’s a very pleasant environment to 
+            be on a very interactive learning platform
+            which helps me to enhance my skill set to move
+            forward in an IT marathon.`,
+    image: '',
+  },
+  {
+    name: 'John Doe',
+    role: 'Accountant',
+    quote: `GeeksforGeeks helped me a lot to
+            crack the coding rounds/Interviews.`,
+    image: '',
+  },
+  {
+    name: 'Jane Doe',
+    role: 'Infosys',
+    quote: `I got very good problem-solving skills 
+            in GC 6 classes. After completing this class, 
+            I gained in-depth knowledge of data structures 
+            and algorithms. GeeksforGeeks helped a lot to 
+            crack the interviews.`,
+    image: '',
+  },
+];
+
+const TestimonialSlider = () => {
+  const [current, setCurrent] = useState(0);
+
+  const nextSlide = () => {
+    setCurrent((prev) => (prev + 1) % testimonials.length);
+  };
+
+  const prevSlide = () => {
+    setCurrent((prev) => (prev - 1 + testimonials.length) % testimonials
+    .length);
+  };
+
+  return (
+    <div className="relative w-full max-w-3xl mx-auto py-12 p-6 rounded-lg">
+      <div className="overflow-hidden">
+        <div className="flex transition-transform duration-700 ease-in-out"  style={{ transform: `translateX(-${current * 100}%)` }}>
+          {testimonials.map((testimonial, index) => (
+            <div key={index} className="flex-shrink-0 w-full p-8">
+              <div className="bg-white shadow-lg rounded-lg  hover:shadow-2xl transition-shadow duration-300 p-6">
+                {/* <div className="flex justify-center mb-4">
+                  <Image src={testimonial.image} alt={testimonial.name} width={80} height={80} className="w-20 h-20 rounded-full"/>
+                </div> */}
+                <h3 className="text-xl font-semibold text-center text-gray-800">
+                    {testimonial.name}
+                </h3>
+                <p className="text-center text-sm font-semibold text-gray-500">
+                  <span className="text-teal-600">
+                    {testimonial.role}
+                  </span>
+                </p>
+                <div className="mt-4 text-gray-600 text-center italic">
+                  <p className="max-w-xs mx-auto">{testimonial.quote}</p>
                 </div>
-                <button aria-label="Prev Button" className="outline-none absolute -left-4 md:left-0 top-1/2 -translate-y-1/2 bg-gray-100 dark:bg-gray-900 p-4 rounded-full text-gray-800 dark:text-gray-200">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-6 h-6">
-                        <path fillRule="evenodd" d="M18 10a.75.75 0 01-.75.75H4.66l2.1 1.95a.75.75 0 11-1.02 1.1l-3.5-3.25a.75.75 0 010-1.1l3.5-3.25a.75.75 0 111.02 1.1l-2.1 1.95h12.59A.75.75 0 0118 10z" clipRule="evenodd" />
-                    </svg>
-                </button>
-                <button aria-label="Next Button" className="outline-none absolute -right-4 md:right-0 top-1/2 -translate-y-1/2 bg-gray-100 dark:bg-gray-900 p-4 rounded-full text-gray-800 dark:text-gray-200">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-6 h-6">
-                        <path fillRule="evenodd" d="M2 10a.75.75 0 01.75-.75h12.59l-2.1-1.95a.75.75 0 111.02-1.1l3.5 3.25a.75.75 0 010 1.1l-3.5 3.25a.75.75 0 11-1.02-1.1l2.1-1.95H2.75A.75.75 0 012 10z" clipRule="evenodd" />
-                    </svg>
-                </button>
-                <div className="flex items-center gap-1 border-0 bg-transparent absolute left-1/2 -translate-x-1/2 -bottom-10">
-                    <span className="cursor-pointer w-4 h-2 rounded-full bg-blue-600 transition" />
-                    <span className="cursor-pointer w-2 h-2 rounded-full bg-gray-400 dark:bg-gray-800 transition ease-linear" />
-                    <span className="cursor-pointer w-2 h-2 rounded-full bg-gray-400 dark:bg-gray-800 transition ease-linear" />
-                </div>
+              </div>
             </div>
+          ))}
         </div>
-    </section>
-)
-}
-export default TestimonialSection
+      </div>
+
+      <div className="flex justify-center space-x-2 mt-4">
+        {testimonials.map((_, index) => (
+          <button key={index} className={`h-2 w-2 rounded-full ${current === index ? 'bg-teal-600' : 'bg-gray-300'} transition-all duration-300`}
+          onClick={() => setCurrent(index)}/>
+        ))}
+      </div>
+
+      <div className="absolute top-1/2 left-0 transform -translate-y-1/2">
+        <button
+          className="p-2 bg-teal-500 hover:bg-teal-600 text-white rounded-full transition-colors duration-300" onClick={prevSlide}>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-6 h-6">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7"/>
+          </svg>
+        </button>
+      </div>
+
+      <div className="absolute top-1/2 right-0 transform -translate-y-1/2">
+        <button
+          className="p-2 bg-teal-500 hover:bg-teal-600 text-white rounded-full transition-colors duration-300" onClick={nextSlide}>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-6 h-6">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  );
+};
+
+export default TestimonialSlider;
