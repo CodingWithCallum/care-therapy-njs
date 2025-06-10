@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Care Therapy",
+  title: "CARE Therapy",
   description: "Care Therapy - Your Path to Wellness"
 };
 

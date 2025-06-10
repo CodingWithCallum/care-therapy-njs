@@ -13,7 +13,7 @@ return (
       lg:items-start lg:max-w-none max-w-4xl mx-5 lg:mx-0 lg:flex-1/6 lg:w-1/2">
                     <h1 className="text-3xl/tight sm:text-4xl/tight md:text-5xl/tight xl:text-6xl/tight
    font-bold text-gray-900">
-                        <span className="text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-20% via-blue-600 via-30% to-green-600">Care Therapy<br/></span>
+                        <span className="text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-20% via-blue-600 via-30% to-green-600">CARE Therapy<br/></span>
                     </h1>
                     <h2 className="text-1xl sm:text-2xl md:text-3xl xl:text-4xl
    font-bold text-gray-900">Helping you move better, live stronger, and perform with confidence.</h2>
