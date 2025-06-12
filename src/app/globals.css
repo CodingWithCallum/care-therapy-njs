@@ -2,3 +2,7 @@
 @plugin "daisyui"{
   themes: cmyk --default;
 }
+
+.article {
+  @apply flex flex-col gap-3 text-lg tracking-wide mb-20
+}

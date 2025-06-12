@@ -1,52 +1,71 @@
-import Image from "next/image"
-import Link from "next/link"
+// 'use client'
+import "../globals.css";
+// import React, {useState} from "react";
+// import {submitContactForm} from "../actions/actions";
+// import {useActionState} from "react";
  
-const ContactUs = () => {
-return (
-    <section className="py-24">
-        <div className="max-w-7xl mx-auto px-5 sm:px-10 md:px-12 lg:px-5 flex flex-col md:flex-row gap-16">
-            <div className="flex md:flex-1">
-                <Image src="/images/creative-agency-production.webp" alt="creative agency " width={1300} height={900} className="w-full md:h-full object-cover rounded-lg" />
+export default function ContactUs(){
+   return (
+    <main>
+    <section className="pt-10">
+        <div className="max-w-7xl px-4 sm:px-6 lg:px-8 py-12 lg:py-24 mx-auto">
+            <div className="mb-6 sm:mb-10 max-w-2xl text-center mx-auto">
+                <h2 className="font-medium text-black text-2xl sm:text-4xl dark:text-white">
+                Contact Us To Make A Booking
+                </h2>
             </div>
-            <div className="md:w-1/2 space-y-12 text-gray-700 dark:text-gray-300 md:py-8">
-                <h1 className="text-gray-900 dark:text-white font-semibold text-2xl sm:text-3xl md:text-4xl">
-                    We help drive your business forward faster
-                </h1>
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus, saepe aliquid autem alias vero distinctio dignissimos consequatur? Excepturi quibusdam, quam ipsum hic, laudantium ducimus suscipit, culpa facere consequuntur repellat delectus.
-                </p>
-                <div className="grid gap-6 sm:grid-cols-2">
-                    <a href="tel:+243" className="flex gap-x-6 items-start" rel="noreferer">
-                        <span className="p-3 md:p-3.5 rounded-md bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-200 flex w-max">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
-                                <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
-                            </svg>
-                        </span>
-                        <div className="space-y-0.5 flex flex-col flex-1">
-                            <p className="text-foreground">Call us</p>
-                            <p className="font-semibold text-gray-900 dark:text-white text-lg">+243 xx xx xx xxx</p>
-                        </div>
-                    </a>
-                    <a href="mailto:" className="flex gap-x-6 items-start" rel="noreferer">
-                        <span className="p-3 md:p-3.5 rounded-md bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-200 flex w-max">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
-                                <path strokeLinecap="round" d="M16.5 12a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0zm0 0c0 1.657 1.007 3 2.25 3S21 13.657 21 12a9 9 0 10-2.636 6.364M16.5 12V8.25" />
-                            </svg>
-                        </span>
-                        <div className="space-y-0.5 flex flex-col flex-1">
-                            <p className="text-foreground">Send us a mail</p>
-                            <p className="font-semibold text-gray-900 dark:text-white text-lg">+243 xx xx xx xxx</p>
-                        </div>
-                    </a>
+            <div className="grid grid-cols-1 lg:grid-cols-2 lg:items-center gap-6 md:gap-8 lg:gap-12">
+                <div className="aspect-w-16 aspect-h-6 lg:aspect-h-14 overflow-hidden bg-gray-100 rounded-2xl dark:bg-neutral-800">
+                <img className="group-hover:scale-105 group-focus:scale-105 transition-transform duration-500 ease-in-out object-cover rounded-2xl" src="https://images.unsplash.com/photo-1572021335469-31706a17aaef?q=80&w=560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Contacts Image"/>
                 </div>
-                <div className="flex">
-                    <Link href="#" className="px-5 h-11 flex items-center bg-gray-900 dark:bg-gray-100 rounded-lg text-white dark:text-gray-900">
-                        Know more
-                    </Link>
+                <div className="space-y-8 lg:space-y-16">
+                    <div>
+                        <h3 className="mb-5 font-semibold text-black dark:text-white">Our servicing locations</h3>
+                        <div className="grid sm:grid-cols-2 gap-4 sm:gap-6 md:gap-8 lg:gap-12">
+                            <div className="flex gap-4">
+                                <svg className="shrink-0 size-5 text-gray-500 dark:text-neutral-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                                <div className="grow">
+                                    <p className="text-sm text-gray-600 dark:text-neutral-400">South Africa</p>
+                                    <address className="mt-1 text-black not-italic dark:text-white">Pretoria<br/>Johannesburg<br/>Greater Gauteng Region </address>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 className="mb-5 font-semibold text-black dark:text-white">Contact details</h3>
+                        <div className="grid sm:grid-cols-2 gap-4 sm:gap-6 md:gap-8 lg:gap-12">
+                            <div className="flex gap-4">
+                                <svg className="shrink-0 size-5 text-gray-500 dark:text-neutral-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M21.2 8.4c.5.38.8.97.8 1.6v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V10a2 2 0 0 1 .8-1.6l8-6a2 2 0 0 1 2.4 0l8 6Z"></path><path d="m22 10-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 10"></path></svg>
+
+                                <div className="grow">
+                                    <p className="text-sm text-gray-600 dark:text-neutral-400">Email us</p>
+                                    <p><a className="relative inline-block font-medium text-black before:absolute before:bottom-0.5 before:start-0 before:-z-1 before:w-full before:h-1 before:bg-yellow-400 hover:before:bg-black focus:outline-hidden focus:before:bg-black dark:text-white dark:hover:before:bg-white dark:focus:before:bg-white" href="mailto:caretherapy@gmail.com">caretherapy@gmail.com</a>
+                                    </p>
+                                </div>
+                            </div>
+
+                        <div className="flex gap-4">
+                            <svg className="shrink-0 size-5 text-gray-500 dark:text-neutral-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                            <div className="grow">
+                                <p className="text-sm text-gray-600 dark:text-neutral-400">Call us</p>
+                                <p><a className="relative inline-block font-medium text-black before:absolute before:bottom-0.5 before:start-0 before:-z-1 before:w-full before:h-1 before:bg-yellow-400 hover:before:bg-black focus:outline-hidden focus:before:bg-black dark:text-white dark:hover:before:bg-white dark:focus:before:bg-white" href="tel:+274567890">+27 23-456-7890</a>
+                                </p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-)
+    <section>
+        <div className="mb-6 sm:mb-10 max-w-2xl text-center mx-auto">
+            <h2 className="font-medium text-black text-2xl sm:text-4xl dark:text-white">
+            {/* Make a booking */}
+            </h2>
+        </div>
+    </section>
+    </main>
+
+  );
 }
-export default ContactUs

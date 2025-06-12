@@ -40,8 +40,8 @@ export default function Navbar() {
                             </Link>
                         </li>
                         <li>
-                            <Link href="/ContactUs" className="transition ease-linear hover:text-gray-900 dark:hover:text-white">
-                                Contact Us
+                            <Link href="/" className="transition ease-linear hover:text-gray-900 dark:hover:text-white">
+                                FAQ
                             </Link>
                         </li>
                     </ul>
