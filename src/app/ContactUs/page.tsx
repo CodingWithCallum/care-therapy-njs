@@ -1,8 +1,4 @@
-// 'use client'
 import "../globals.css";
-// import React, {useState} from "react";
-// import {submitContactForm} from "../actions/actions";
-// import {useActionState} from "react";
  
 export default function ContactUs(){
    return (

@@ -1,4 +1,5 @@
 'use client';
+import "../globals.css";
 import React, { useState } from 'react';
 import Image from 'next/image';
 
@@ -51,12 +52,15 @@ const TestimonialSlider = () => {
   };
 
   return (
-    <div className="relative w-full max-w-3xl mx-auto py-12 p-6 rounded-lg">
+    <div className="relative w-full max-w-3xl mx-auto py-12 p-8 rounded-lg">
       <div className="overflow-hidden">
+        <h2 className="text-4xl text-center font-semibold justify-between text-gray-900">
+            Testimonials
+        </h2>
         <div className="flex transition-transform duration-700 ease-in-out"  style={{ transform: `translateX(-${current * 100}%)` }}>
           {testimonials.map((testimonial, index) => (
-            <div key={index} className="flex-shrink-0 w-full p-8">
-              <div className="bg-white shadow-lg rounded-lg  hover:shadow-2xl transition-shadow duration-300 p-6">
+            <div key={index} className="flex-shrink-0 w-full p-12">
+              <div className="bg-white shadow-lg rounded-lg  hover:shadow-2xl transition-shadow duration-300 p-2">
                 {/* <div className="flex justify-center mb-4">
                   <Image src={testimonial.image} alt={testimonial.name} width={80} height={80} className="w-20 h-20 rounded-full"/>
                 </div> */}
@@ -77,7 +81,7 @@ const TestimonialSlider = () => {
         </div>
       </div>
 
-      <div className="flex justify-center space-x-2 mt-4">
+      <div className="flex justify-center space-x-2 mt-6">
         {testimonials.map((_, index) => (
           <button key={index} className={`h-2 w-2 rounded-full ${current === index ? 'bg-teal-600' : 'bg-gray-300'} transition-all duration-300`}
           onClick={() => setCurrent(index)}/>

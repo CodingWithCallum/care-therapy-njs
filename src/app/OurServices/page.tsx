@@ -4,21 +4,21 @@ import Link from "next/link"
 const OurServices = () => {
 return (
     <section className="py-25">
-        <div className="max-w-7xl mx-auto px-5 pt-15 sm:px-10 md:px-12 lg:px-1 divide-gray-200 dark:divide-gray-800">
+        <div className="max-w-7xl mx-auto px-5 pt-15 sm:px-10 md:px-12 lg:px-1 divide-gray-200">
             <div className="flex md:justify-between md:flex-row flex-col gap-5 md:gap-20">
                 <div className="max-w-xl">
-                    <h1 className="text-3xl/tight sm:text-4xl/tight font-bold text-gray-900 dark:text-white">
+                    <h1 className="text-3xl/tight sm:text-4xl/tight font-bold text-gray-700">
                         The Right Plan for <br />
-                        <span className="text-sky-700 dark:text-sky-600">Your Business</span>
+                        <span className="text-sky-700">Your Business</span>
                     </h1>
                 </div>
                 <div className="flex-1 max-w-2xl pt-5">
-                    <p className="text-gray-700 dark:text-gray-300">
+                    <p className="text-gray-700">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi ipsam ipsa eum libero, in voluptatibus esse ad? Enim ratione inventore eum ducimus qui ea,
                     </p>
                 </div>
             </div>
-            <div className="mt-8 border-t border-t-gray-200 dark:border-t-gray-800 divide-y divide-gray-200 dark:divide-gray-800">
+            <div className="mt-8 border-t border-t-gray-200 divide-y divide-gray-200">
                 <div className="py-4 grid items-center md:grid-cols-3 lg:grid-cols-5 gap-6">
                     <div className="md:col-span-2 lg:col-span-1">
                         <h2 className="font-bold text-2xl text-gray-900 dark:text-gray-100">Starter</h2>

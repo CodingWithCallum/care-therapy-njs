@@ -1,6 +1,7 @@
 import Link from "next/link";
- 
-const iconRender = (val) => {
+import "../globals.css";
+
+const iconRender = (val: any) => {
 switch (val) {
     case "default-ico":
         return (
@@ -12,20 +13,20 @@ switch (val) {
         return <>No Icon</>;
 }
 }
-const FeatureItem = ({ title, description, icon, color }) => {
+const FeatureItem = ({ title, description, icon, color}:any) => {
 return (
-    <div className="h-full p-4 bg-gray-100 dark:bg-gray-900 rounded-lg space-y-3">
+    <div className="h-full p-4 bg-gray-100 rounded-lg space-y-3">
         <div className="flex items-center gap-3">
             <span className={`p-3 flex w-max rounded-full text-white ${color}`}>
                 {
                     iconRender(icon)
                 }
             </span>
-            <h1 className="align-bottom text-lg font-semibold capitalize text-gray-900 dark:text-white">
+            <h1 className="align-bottom text-lg font-semibold capitalize text-gray-900">
                 {title}
             </h1>
         </div>
-        <p className="text-sm font-light text-gray-700 dark:text-gray-300">
+        <p className="text-sm font-light text-gray-700">
             {description}
         </p>
     </div>
@@ -64,21 +65,14 @@ const features = [
  
 const Features = () => {
 return (
-    <section className="py-5 my-5">
+    <section className="py-5 sm:mt-5 md:mt-5 lg:mt-5 xl:mt-5">
         <div className="max-w-7xl mx-auto px-5 sm:px-10 md:px-12 lg:px-5">
             <div className="flex flex-col lg:flex-row lg:items-center gap-8 lg:gap-10 xl:gap-14">
-                <div className="lg:w-[55%] xl:w-2/3 lg:items-center grid sm:grid-cols-2 xl:grid-cols-2 gap-4">
-                    {
-                        features.map(feature => (
-                            <FeatureItem key={feature.id} {...feature} />
-                        ))
-                    }
-                </div>
-                <div className="flex-1 py-10 lg:py-8 space-y-8 max-w-2xl">
-                    <h2 className="text-4xl font-semibold text-gray-900 dark:text-white">
+                <div className="flex-1 pt-5 lg:py-8 space-y-8 max-w-2xl">
+                    <h2 className="text-4xl font-semibold text-gray-900">
                         Our Services
                     </h2>
-                    <p className="text-gray-700 dark:text-gray-300 max-w-md">
+                    <p className="text-gray-700 max-w-md">
                         Our approach is rooted in the belief that exercise is a powerful tool for enhancing physical function, independence, and quality of life regardless of age, ability, or condition.
                     </p>
                     <div className="flex">
@@ -86,6 +80,13 @@ return (
                             Learn More
                         </Link>
                     </div>
+                </div>
+                <div className="lg:w-[55%] xl:w-2/3 lg:items-center grid sm:grid-cols-2 xl:grid-cols-2 gap-4">
+                    {
+                        features.map(feature => (
+                            <FeatureItem key={feature.id} {...feature} />
+                        ))
+                    }
                 </div>
             </div>
         </div>

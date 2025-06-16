@@ -14,40 +14,38 @@ export default function Navbar() {
         <div className="mx-auto lg:max-w-7xl w-full px-5 sm:px-10 md:px-12 lg:px-5 h-full items-center">
             <nav className="flex justify-between items-center h-full">
                 <div className="flex min-w-max items-center">
-                    <Link href="/" className="flex items-center gap-x-4 text-2xl font-semibold text-gray-700 dark:text-gray-300">
+                    <Link href="/" className="flex items-center gap-x-4 text-2xl font-semibold text-gray-700">
                         <Image src="/ct_logo_midi_colour.png" alt="Logo" width={100} height={100}/>
                     </Link>
                 </div>
-                <div className={`
-            flex flex-col space-y-10 inset-0 fixed top-0  h-[100dvh] bg-white dark:bg-gray-950 lg:!bg-transparent py-20 px-5 sm:px-10 md:px-14
-            transition-all ease-linear duration-300 lg:flex-row lg:flex-1 lg:py-0 lg:px-0 lg:space-y-0 lg:gap-x-10 lg:relative lg:top-0 lg:h-full lg:items-center lg:justify-between lg:w-max
+                <div className={`flex flex-col space-y-10 inset-0 fixed top-0  h-[100dvh] bg-white lg:!bg-transparent py-20 px-5 sm:px-10 md:px-14 transition-all ease-linear duration-300 lg:flex-row lg:flex-1 lg:py-0 lg:px-0 lg:space-y-0 lg:gap-x-10 lg:relative lg:top-0 lg:h-full lg:items-center lg:justify-between lg:w-max
             ${openNavbar ? "visible opacity-100 translate-y-0" : "-translate-y-9 opacity-0 invisible lg:translate-y-0 lg:visible lg:opacity-100"}
           `}>
-                    <ul className="flex flex-col gap-y-5 text-gray-700 dark:text-gray-300 lg:items-center lg:flex-row lg:gap-x-5 lg:h-full lg:justify-center lg:flex-1">
+                    <ul className="flex flex-col gap-y-5 text-gray-700 lg:items-center lg:flex-row lg:gap-x-5 lg:h-full lg:justify-center lg:flex-1">
                         <li>
-                            <Link href="/OurStory" className="transition ease-linear hover:text-gray-900 dark:hover:text-white">
+                            <Link href="/OurStory" className="transition ease-linear hover:text-gray-900">
                                 Our Story
                             </Link>
                         </li>
                         <li>
-                            <Link href="/OurServices" className="transition ease-linear hover:text-gray-900 dark:hover:text-white">
+                            <Link href="/OurServices" className="transition ease-linear hover:text-gray-900">
                                 Services
                             </Link>
                         </li>
                         <li>
-                            <Link href="/BlogPage" className="transition ease-linear hover:text-gray-900 dark:hover:text-white">
+                            <Link href="/BlogPage" className="transition ease-linear hover:text-gray-900">
                                 Blog
                             </Link>
                         </li>
                         <li>
-                            <Link href="/" className="transition ease-linear hover:text-gray-900 dark:hover:text-white">
+                            <Link href="/" className="transition ease-linear hover:text-gray-900">
                                 FAQ
                             </Link>
                         </li>
                     </ul>
                     <div className="w-full flex sm:w-max lg:min-w-max lg:items-center">
-                        <Link href="/ContactUs/#" className="flex justify-center gap-x-3 items-center text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white
-                    border-b bg-gray-700 dark:border-blue-300 hover:border-b-gray-900 dark:hover:border-b-white bg-transparent">
+                        <Link href="/ContactUs/" className="flex justify-center gap-x-3 items-center text-gray-700 hover:text-gray-900
+                    border-b bg-gray-700 hover:border-b-gray-900 bg-transparent">
                             Get in touch
                             <span>
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5">
@@ -60,22 +58,16 @@ export default function Navbar() {
                 <div className="flex items-center justify-end relative z-60 lg:hidden">
                     <button onClick={() => {
                         toggleNavbar()
-                    }} className="p-3 rounded-full bg-emerald-600 dark:bg-emerald-500 outline-none w-12 aspect-square flex flex-col relative justify-center items-center">
+                    }} className="p-3 rounded-full bg-emerald-600 outline-none w-12 aspect-square flex flex-col relative justify-center items-center">
                         <span className="sr-only">
                             toggle navbar
                         </span>
-                        <span className={`
-                w-6 h-0.5 rounded-full bg-gray-300 transition-transform duration-300 ease-linear
-                ${openNavbar ? "translate-y-1.5 rotate-[40deg]" : ""}
-              `} />
-                        <span className={`
-                w-6 origin-center  mt-1 h-0.5 rounded-full bg-gray-300 transition-all duration-300 ease-linear
-                ${openNavbar ? "scale-x-0 opacity-0" : ""}
-              `} />
-                        <span className={`
-                w-6 mt-1 h-0.5 rounded-full bg-gray-300 transition-all duration-300 ease-linear
-                ${openNavbar ? "-translate-y-1.5 -rotate-[40deg]" : ""}
-              `} />
+                        <span className={`w-6 h-0.5 rounded-full bg-gray-300 transition-transform duration-300 ease-linear
+                ${openNavbar ? "translate-y-1.5 rotate-[40deg]" : ""}`} />
+                        <span className={`w-6 origin-center  mt-1 h-0.5 rounded-full bg-gray-300 transition-all duration-300 ease-linear
+                ${openNavbar ? "scale-x-0 opacity-0" : ""}`} />
+                        <span className={`w-6 mt-1 h-0.5 rounded-full bg-gray-300 transition-all duration-300 ease-linear
+                ${openNavbar ? "-translate-y-1.5 -rotate-[40deg]" : ""}`} />
                     </button>
                 </div>
             </nav>
