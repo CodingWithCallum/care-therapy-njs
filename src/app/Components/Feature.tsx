@@ -1,7 +1,7 @@
 import Link from "next/link";
 import "../globals.css";
 
-const iconRender = (val: any) => {
+const iconRender = (val: string) => {
 switch (val) {
     case "default-ico":
         return (
@@ -13,7 +13,14 @@ switch (val) {
         return <>No Icon</>;
 }
 }
-const FeatureItem = ({ title, description, icon, color}:any) => {
+type FeatureItemProps = {
+    title: string;
+    description: string;
+    icon: string;
+    color: string;
+};
+
+const FeatureItem = ({ title, description, icon, color }: FeatureItemProps) => {
 return (
     <div className="h-full p-4 bg-gray-100 rounded-lg space-y-3">
         <div className="flex items-center gap-3">
