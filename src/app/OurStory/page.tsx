@@ -6,54 +6,40 @@ export default function OurStory() {
     <section className="py-25 mt-10">
         <div className="max-w-7xl mx-auto sm:px-10 md:px-12 lg:px-5 md:flex-row gap-16 justify-items-center">
             <h1 className="mt-6 text-3xl/tight sm:text-4xl/tight md:text-5xl/tight xl:text-6xl/tight font-bold text-gray-900">
-                <span className="text-transparent bg-clip-text bg-gradient-to-br from-blue-700 from-30% via-blue-400 via-50% to-teal-600">CARE Therapy</span>s Story
+                <span className="text-transparent bg-clip-text bg-gradient-to-br from-blue-700 from-30% via-blue-400 via-50% to-teal-600">CARE Therapy's Story</span>
             </h1>
         </div>
-
-        <div className="mb-10">
-            <hr className="h-px my-8 bg-gray-200 border-0"></hr>
-        </div>
-
         <div className="max-w-7xl mx-auto sm:px-10 md:px-12 lg:px-5 md:flex-row gap-16">
             <div className="flex-row justify-items-center">
-                <h2 className="mb-5 text-1xl sm:text-2xl md:text-3xl xl:text-4xl font-bold text-gray-900">
+                <h2 className="mt-10 text-1xl sm:text-2xl md:text-3xl xl:text-4xl font-bold text-gray-900">
                     Our Mission
                 </h2>
             </div>
-            <div className="grid grid-cols-2 grid-flow-row">
-                <div>
-                    <div className="space-y-6 p-2 pt-3 rounded-xl bg-white border border-gray-100 ">
-                        <p className="text-gray-700">
-                            <span>To bridge the gap between rehabilitation and fitness by offering expert-guided, proactive exercise therapy in real-world settings.</span>
-                        </p>
-                    </div>
-                    <div className="space-y-6 p-2 pt-3 rounded-xl bg-white border border-gray-100 ">
-                        <p className="text-gray-700">
-                            <span>Unlike physiotherapy, which typically focuses on diagnosing and treating acute injuries and pain, CARE Therapy emphasizes long-term movement health, maintenance, and performance enhancement.</span>
-                        </p>
-                    </div>
-                    <div className="space-y-6 p-2 pt-3 rounded-xl bg-white border border-gray-100 ">
-                        <p className="text-gray-700">
-                            <span>I focus on preventative care: improving posture, strength, balance, and mobility before problems become disabling.</span>
-                        </p>
-                    </div>
+            <div className="flex-row justify-items-center">
+                <h3 className="mt-2 mb-5 text-base sm:text-xs md:text-1xl xl:text-2xl font-medium text-gray-400">
+                    And What Sets Us Apart
+                </h3>
+            </div>
+            <div className="flex flex-col pb-10">
+                <div className="flex flex-row items-center gap-2">
+                    <Image src="/arrow-small-right.png" alt="arrow small right" width={20} height={20} className="w-5 h-5 mb-2 mt-2"/>
+                    <p>To bridge the gap between rehabilitation and fitness by offering expert-guided, proactive exercise therapy in real-world settings.</p>
                 </div>
-                <div>
-                    <div className="space-y-6 p-2 pt-3 rounded-xl bg-white border border-gray-100 ">
-                        <p className="text-gray-700">
-                            <span>CARE Therapy adapts to each client’s specific needs, goals, and environment. Making it ideal for elderly clients, those recovering from illness or injury, and even school-age athletes looking to improve their performance.</span>
-                        </p>
-                    </div>
-                    <div className="space-y-6 p-2 pt-3 rounded-xl bg-white border border-gray-100 ">
-                        <p className="text-gray-700">
-                            <span>CARE Therapy brings the service to you. Whether at home, in community settings, or on the field. Delivering professional care without the clinic walls.</span>
-                        </p>
-                    </div>
-                    <div className="space-y-6 p-2 pt-3 rounded-xl bg-white border border-gray-100 ">
-                        <p className="text-gray-700">
-                            <span>+.</span>
-                        </p>
-                    </div>
+                <div className="flex flex-row items-center gap-2">
+                    <Image src="/arrow-small-right.png" alt="arrow small right" width={20} height={20} className="w-5 h-5 mb-2 mt-2"/>
+                    <p>Unlike physiotherapy, which typically focuses on diagnosing and treating acute injuries and pain, CARE Therapy emphasizes long-term movement health, maintenance, and performance enhancement.</p>
+                </div>
+                <div className="flex flex-row items-center gap-2">
+                    <Image src="/arrow-small-right.png" alt="arrow small right" width={20} height={20} className="w-5 h-5 mb-2 mt-2"/>
+                    <p>I focus on preventative care: improving posture, strength, balance, and mobility before problems become disabling.</p>
+                </div>
+                <div className="flex flex-row items-center gap-2">
+                    <Image src="/arrow-small-right.png" alt="arrow small right" width={20} height={20} className="w-5 h-5 mb-2 mt-2"/>
+                    <p>CARE Therapy brings the service to you. Whether at home, in community settings, or on the field. Delivering professional care without the clinic walls.</p>
+                </div>
+                <div className="flex flex-row items-center gap-2">
+                    <Image src="/arrow-small-right.png" alt="arrow small right" width={20} height={20} className="w-5 h-5 mb-2 mt-2"/>
+                    <p>CARE Therapy adapts to each client’s specific needs, goals, and environment. Making it ideal for elderly clients, those recovering from illness or injury, and even school-age athletes looking to improve their performance.</p>
                 </div>
             </div>
         </div>
@@ -63,21 +49,21 @@ export default function OurStory() {
         </div>
 
         <div className="max-w-7xl mx-auto px-3 sm:px-10 md:px-12 lg:px-5 flex flex-row lg:flex-row gap-10 lg:gap-6">
-            <div className="w-192 flex-initial content-center">
+            <div className="flex flex-initial content-center">
                 <div className="flex flex-col">
-                    <div className="basis-1/3">
-                        <h2 className="mb-5 text-1xl sm:text-2xl md:text-3xl xl:text-4xl
+                    <div className="content-end basis-4/10">
+                        <h2 className="justify-center mb-5 text-2xl sm:text-2xl md:text-3xl xl:text-4xl
                             font-bold text-gray-900">Our Specialist - Cameron
                         </h2>
                     </div>
-                    <div className="basis-2/3">
+                    <div className="basis-6/10">
                         <p>My name is Cameron Libera - a clinical and adaptive exercise specialist. I am the founder of CARE Therapy providing mobile and individualised exercise therapy in Pretoria and Johannesburg.</p> <br/>
                         <p>At the renowned <strong>Center of Achievement</strong> in California, USA - I have over 3 years of international experience. At the center, I provided exercise therapy for individuals with Stroke, Multiple Sclerosis (MS), Traumatic Brain Injury (TBI), Spinal Cord Injury (SCI), Spina Bifida, Arthritis, Cerebral Palsy (CP), and children with Autism and other developmental disabilities.</p>
                     </div>
                 </div>
             </div>
-            <div className="w-128 flex-initial p-5">
-                <Image src="/cameron_libera_linkedin.jpeg" width={500} height={500} alt="Headshot of Cameron Libera" className="w-full md:h-full object-cover rounded-full"/>
+            <div className="flex w-max py-5 pl-15">
+                <Image src="/cameron_libera_linkedin.jpeg" width={1000} height={1000} alt="Headshot of Cameron Libera" className="object-cover rounded-lg"/>
             </div>
         </div>
 
@@ -98,7 +84,7 @@ export default function OurStory() {
                 </p>
                 <div className="grid gap-3">
                     <div className="flex lg:w-auto md:w-auto space-y-6 p-2 pt-3 rounded-xl bg-white border border-gray-100">
-                        <div className="p-2 items-center">
+                        <div className="w-90 flex-initial p-2 items-center">
                             <div className="flex items-center gap-3">
                                 <span className="rounded-full bg-gray-900 text-gray-100 w-max p-3 flex">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
@@ -108,12 +94,11 @@ export default function OurStory() {
                                 <h2 className="font-semibold text-xl text-gray-900">Rhodes University, South Africa.</h2>
                             </div>
                             <p className="mt-2">
-                                <span>Bachelor of Social Sciences in Human Kinetics and Ergonomics (HKE) and Psychology.</span><br/><br/>
-                                <span>Bachelor of Social Sciences Honours in Human Kinetics and Ergonomics.</span>
+                                <span>Bachelor of Social Sciences in Human Kinetics and Ergonomics (Hons) and Psychology.</span>
                             </p>
                         </div>
-                        <div className="py-2 divider divider-horizontal">&</div>
-                        <div className="p-2">
+                        <div className="w-16 flex-initial py-2 lg:pr-4 md:pr-2 divider divider-horizontal">&</div>
+                        <div className="w-90 flex-initial p-2 items-center">
                             <div className="flex items-center gap-3">
                                 <span className="rounded-full bg-gray-900 text-gray-100 w-max p-3 flex">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
@@ -121,11 +106,11 @@ export default function OurStory() {
                                         <path strokeLinecap="round" strokeLinejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
                                     </svg>
                                 </span>
-                                <h2 className="align-bottom font-semibold text-xl text-gray-900">California State University, US.</h2>
+                                <h2 className="font-semibold text-xl text-gray-900">California State University, US.</h2>
                             </div>
                             <div className="flex items-center">
-                                <p className="text-gray-700">
-                                    <span>Master of Science in Kinesiology, with specialization in Adapted Physical Activity.</span>
+                                <p className="mt-2">
+                                    <span>Master of Science in Kinesiology: Specialization in Adapted Physical Activity.</span>
                                 </p>
                             </div>
                         </div>

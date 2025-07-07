@@ -33,13 +33,8 @@ export default function Navbar() {
                             </Link>
                         </li>
                         <li>
-                            <Link href="/BlogPage" className="transition ease-linear hover:text-gray-900">
+                            <Link href="/OurBlog" className="transition ease-linear hover:text-gray-900">
                                 Blog
-                            </Link>
-                        </li>
-                        <li>
-                            <Link href="/" className="transition ease-linear hover:text-gray-900">
-                                FAQ
                             </Link>
                         </li>
                     </ul>
