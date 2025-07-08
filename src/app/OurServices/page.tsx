@@ -14,7 +14,7 @@ return (
                 </div>
                 <div className="flex-1 max-w-2xl pt-5">
                     <p className="text-gray-700">
-                        We offer a range of services tailored to your needs, whether you're looking for personalized exercise therapy, movement health coaching, or group classes. Our plans are designed to help you achieve your fitness goals and maintain a healthy lifestyle.
+                        We offer a range of services tailored to your needs, whether you are looking for personalized exercise therapy, movement health coaching, or group classes. Our plans are designed to help you achieve your fitness goals and maintain a healthy lifestyle.
                     </p>
                 </div>
             </div>

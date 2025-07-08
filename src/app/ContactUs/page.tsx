@@ -22,13 +22,13 @@ export default function ContactUs(){
                 </div>
                 <div className="space-y-8 lg:space-y-16">
                     <div>
-                        <h3 className="mb-5 font-semibold text-black">Our servicing locations</h3>
+                        <h3 className="mb-5 font-semibold text-black">Our Servicing Locations</h3>
                         <div className="grid sm:grid-cols-2 gap-4 sm:gap-6 md:gap-8 lg:gap-12">
                             <div className="flex gap-4">
                                 <svg className="shrink-0 size-5 text-gray-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg>
                                 <div className="grow">
                                     <p className="text-sm text-gray-600">South Africa</p>
-                                    <address className="mt-1 text-black not-italic">Pretoria<br/>Johannesburg<br/>Greater Gauteng Region </address>
+                                    <address className="mt-1 text-black not-italic">Pretoria<br/>Johannesburg<br/>Greater Gauteng Region</address>
                                 </div>
                             </div>
                         </div>

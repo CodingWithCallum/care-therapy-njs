@@ -6,34 +6,19 @@ const testimonials = [
   {
     name: 'Callum Barry',
     role: 'Software Developer',
-    quote: `Here is space for a review from each client would appear
-            the formatting for this is direct and not by P`,
+    quote: 'Cameron\'s help me start my training plan to rebuild my running strength after an injury. He provided a structured plan that was easy to follow and tailored to my needs. I highly recommend his services.',
     image: '',
   },
   {
     name: 'Tara Pohl',
     role: 'Medical Officer',
-    quote: `It’s a very pleasant environment to 
-            be on a very interactive learning platform
-            which helps me to enhance my skill set to move
-            forward in an IT marathon.`,
+    quote: 'Cameron has been instrumental in my recovery from a sports injury. His expertise in rehabilitation and personalized training plans have made a significant difference in my performance and overall health.',
     image: '',
   },
   {
-    name: 'John Doe',
-    role: 'Accountant',
-    quote: `GeeksforGeeks helped me a lot to
-            crack the coding rounds/Interviews.`,
-    image: '',
-  },
-  {
-    name: 'Jane Doe',
-    role: 'Infosys',
-    quote: `I got very good problem-solving skills 
-            in GC 6 classes. After completing this class, 
-            I gained in-depth knowledge of data structures 
-            and algorithms. GeeksforGeeks helped a lot to 
-            crack the interviews.`,
+    name: 'Michael Smilas',
+    role: 'UI/UX Designer',
+    quote: 'CARE Therapy\'s approach to fitness is holistic and effective. He not only focuses on physical training but also emphasizes mental well-being. His guidance has helped me achieve a balanced lifestyle.',
     image: '',
   },
 ];
