@@ -23,7 +23,7 @@ export default function OurStory() {
             <div className="flex flex-col pb-10">
                 <div className="flex flex-row items-center gap-2">
                     <Image src="/arrow-small-right.png" alt="arrow small right" width={20} height={20} className="w-5 h-5 mb-2 mt-2"/>
-                    <p>To bridge the gap between rehabilitation and fitness by offering expert-guided, proactive exercise therapy in real-world settings.</p>
+                    <p>We aim to bridge the gap between rehabilitation and fitness by offering expert-guided, proactive exercise therapy in real-world settings.</p>
                 </div>
                 <div className="flex flex-row items-center gap-2">
                     <Image src="/arrow-small-right.png" alt="arrow small right" width={20} height={20} className="w-5 h-5 mb-2 mt-2"/>
@@ -31,15 +31,15 @@ export default function OurStory() {
                 </div>
                 <div className="flex flex-row items-center gap-2">
                     <Image src="/arrow-small-right.png" alt="arrow small right" width={20} height={20} className="w-5 h-5 mb-2 mt-2"/>
-                    <p>I focus on preventative care: improving posture, strength, balance, and mobility before problems become disabling.</p>
+                    <p>Our focus is on preventative care: improving posture, strength, balance, and mobility before problems become disabling.</p>
                 </div>
                 <div className="flex flex-row items-center gap-2">
                     <Image src="/arrow-small-right.png" alt="arrow small right" width={20} height={20} className="w-5 h-5 mb-2 mt-2"/>
-                    <p>CARE Therapy brings the service to you. Whether at home, in community settings, or on the field. Delivering professional care without the clinic walls.</p>
+                    <p>We bring the service to you. Whether at home, in community settings, or on the field. CARE Therapy delivers professional care without the clinic walls.</p>
                 </div>
                 <div className="flex flex-row items-center gap-2">
                     <Image src="/arrow-small-right.png" alt="arrow small right" width={20} height={20} className="w-5 h-5 mb-2 mt-2"/>
-                    <p>CARE Therapy adapts to each client’s specific needs, goals, and environment. Making it ideal for elderly clients, those recovering from illness or injury, and even school-age athletes looking to improve their performance.</p>
+                    <p>CARE Therapy adapts to each clients specific needs, goals, and environment. Making it ideal for elderly clients, those recovering from illness or injury, and even school-age athletes looking to improve their performance.</p>
                 </div>
             </div>
         </div>
@@ -73,7 +73,7 @@ export default function OurStory() {
         
         <div className="max-w-7xl mx-auto px-5 sm:px-10 md:px-12 lg:px-5 flex flex-col md:flex-row gap-16">
             <div className="flex md:flex-1">
-                <Image src="/working-on-housing-project.jpg" alt="working on housing" width={1300} height={900} className="w-full md:h-full object-cover rounded-lg" />
+                <Image src="https://images.unsplash.com/photo-1717500252106-2a9f83cc61ed?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Image representing graduation" width={22000} height={900} className="w-full md:h-full object-cover rounded-lg" />
             </div>
             <div className="md:w-1/2 lg:w-[65%] space-y-12 text-gray-700">
                 <h2 className="mb-5 text-1xl sm:text-2xl md:text-3xl xl:text-4xl font-bold text-gray-900">
