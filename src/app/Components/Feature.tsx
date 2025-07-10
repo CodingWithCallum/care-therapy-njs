@@ -5,7 +5,7 @@ const iconRender = (val: string) => {
 switch (val) {
     case "default-ico":
         return (
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5" aria-hidden="true">
                 <path fillRule="evenodd" d="M2 3a1 1 0 00-1 1v1a1 1 0 001 1h16a1 1 0 001-1V4a1 1 0 00-1-1H2zm0 4.5h16l-.811 7.71a2 2 0 01-1.99 1.79H4.802a2 2 0 01-1.99-1.79L2 7.5zM10 9a.75.75 0 01.75.75v2.546l.943-1.048a.75.75 0 111.114 1.004l-2.25 2.5a.75.75 0 01-1.114 0l-2.25-2.5a.75.75 0 111.114-1.004l.943 1.048V9.75A.75.75 0 0110 9z" clipRule="evenodd" />
             </svg>
         )
@@ -22,21 +22,19 @@ type FeatureItemProps = {
 
 const FeatureItem = ({ title, description, icon, color }: FeatureItemProps) => {
 return (
-    <div className="h-full p-4 bg-gray-100 rounded-lg space-y-3">
-        <div className="flex items-center gap-3">
-            <span className={`p-3 flex w-max rounded-full text-white ${color}`}>
-                {
-                    iconRender(icon)
-                }
-            </span>
-            <h1 className="align-bottom text-lg font-semibold capitalize text-gray-900">
-                {title}
-            </h1>
-        </div>
-        <p className="text-sm font-light text-gray-700">
-            {description}
-        </p>
+<article className="h-full p-4 bg-gray-100 rounded-lg space-y-3" aria-labelledby={title.replace(/\s+/g, "-").toLowerCase()}>
+    <div className="flex items-center gap-3">
+      <span className={`p-3 flex w-max rounded-full text-white ${color}`} aria-hidden="true">
+        {iconRender(icon)}
+      </span>
+      <h3 id={title.replace(/\s+/g, "-").toLowerCase()} className="text-lg font-semibold capitalize text-gray-900">
+        {title}
+      </h3>
     </div>
+    <p className="text-sm text-gray-700">
+      {description}
+    </p>
+  </article>
 )
 }
 const features = [
@@ -49,14 +47,14 @@ const features = [
 },
 {
     id: 2,
-    title: "Assisted Stretch and Flexibility Therapy",
+    title: "Assisted Stretch \& Flexibility Therapy",
     description: "Hands-on sessions designed to improve flexibility, posture, and overall mobility using assisted stretching techniques.",
     icon: "default-ico",
     color: "bg-indigo-600"
 },
 {
     id: 3,
-    title: "Sports Performance and Injury Prevention",
+    title: "Sports Performance \& Injury Prevention Therapy",
     description: "Tailored programs for athletes and active individuals of all ages, focusing on enhancing performance, preventing injuries, and optimizing recovery.",
     icon: "default-ico",
     color: "bg-orange-600"
@@ -88,7 +86,7 @@ return (
                         </Link>
                     </div>
                 </div>
-                <div className="lg:w-[55%] xl:w-2/3 lg:items-center grid sm:grid-cols-2 xl:grid-cols-2 gap-4">
+                <div className="lg:w-[55%] xl:w-2/3 lg:items-center grid sm:grid-cols-2 xl:grid-cols-2 gap-4" role="list">
                     {
                         features.map(feature => (
                             <FeatureItem key={feature.id} {...feature} />
