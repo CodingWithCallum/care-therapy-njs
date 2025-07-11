@@ -5,7 +5,7 @@ import matter from "gray-matter";
 import { MDXRemote } from "next-mdx-remote/rsc";
 
 export async function generateStaticParams() {
-  const files = fs.readdirSync("content/blog");
+  const files = fs.readdirSync("src/app/Content/Posts");
   return files.map((file) => ({ slug: file.replace(".mdx", "") }));
 }
 
