@@ -1,115 +1,105 @@
 import "../globals.css";
-import Link from "next/link"
+import Link from "next/link";
+
+const services = [
+  {
+    title: "Adapted Exercise Therapy",
+    description: "Clinical exercise approach designed for individuals living with chronic illness, disability, or age-related functional decline.",
+    features: [
+      "Functional movement screenings\/assessments",
+      "Strength, range of motion, balance, functional motor skills, and cardiovascular exercises",
+      "Individualised progression plans",
+      "Ideal for seniors, stroke survivors, and individuals with SCI, MS, Parkinson\’s, arthritis, frailty...",
+    ],
+    price: "R650 \– R800 per session \(fuel\/distance dependent\)",
+    cta: "/ContactUs",
+  },
+  {
+    title: "Assisted Stretching for Flexibility \& Range of Motion (ROM)",
+    description: "Hands-on flexibility therapy to reduce stiffness, improve neuromuscular control, and enhance overall mobility.",
+    features: [
+      "Neuromuscular re-education",
+      "Reduced muscle tension",
+      "Enhanced mobility and increased ROM for active or sedentary clients",
+      "Complementary to rehabilitation and athletic training",
+    ],
+    price: "R250 \(30 min\) \| R400 \(60 min\)",
+    cta: "/ContactUs",
+  },
+  {
+    title: "Sports Performance \& Injury Prevention Therapy",
+    description: "Targeted training for athletes and active individuals to enhance physical performance and prevent injuries.",
+    features: [
+      "Sport\-specific strength \& mobility training",
+      "Movement quality and biomechanical correction",
+      "Speed, agility, and proprioception development",
+      "Return\-to\-play strategies and performance tracking",
+    ],
+    price: "R650 \– R800 per session \(fuel\/distance dependent\)",
+    cta: "/ContactUs",
+  },
+  {
+    title: "Injury Recovery Support",
+    description: "Rehabilitation-focused sessions are designed to bridge the gap between physiotherapy and full physical readiness.",
+    features: [
+      "Post-operative recovery \(e.g. joint replacement, ligament repair\)",
+      "Ongoing or chronic pain management",
+      "Functional return after orthopedic or neurological rehab",
+    ],
+    price: "R800 per session",
+    cta: "/ContactUs",
+  },
+];
 
 const OurServices = () => {
-return (
-    <section className="py-25">
-        <div className="max-w-7xl mx-auto px-5 pt-15 sm:px-10 md:px-12 lg:px-1 divide-gray-200">
-            <div className="flex md:justify-between md:flex-row flex-col gap-5 md:gap-20">
-                <div className="max-w-xl">
-                    <h1 className="text-3xl/tight sm:text-4xl/tight font-bold text-gray-700">
-                        The Right Plan for <br />
-                        <span className="text-transparent bg-clip-text bg-gradient-to-br from-blue-700 from-30% via-blue-400 via-50% to-teal-600">Your Body</span>
-                    </h1>
-                </div>
-                <div className="flex-1 max-w-2xl pt-5">
-                    <p className="text-gray-700">
-                        We offer a range of services tailored to your needs, whether you are looking for personalized exercise therapy, movement health coaching, or group classes. Our plans are designed to help you achieve your fitness goals and maintain a healthy lifestyle.
-                    </p>
-                </div>
-            </div>
-            <div className="mt-8 border-t border-t-gray-200 divide-y divide-gray-200">
-                <div className="py-4 grid items-center md:grid-cols-3 lg:grid-cols-5 gap-6">
-                    <div className="md:col-span-2 lg:col-span-1">
-                        <h2 className="font-bold text-2xl text-gray-900">Plan ABC</h2>
-                    </div>
-                    <div className="text-gray-700 md:col-span-2 lg:col-span-3 md:items-center grid gap-6 md:grid-cols-3">
-                        <ul className="space-y-3 md:col-span-2">
-                            <li className="flex items-center gap-x-4">
-                                <span className="w-5 h-5 text-xs flex items-center justify-center rounded-full bg-sky-700 text-white">✓</span>
-                                Advantage  1
-                            </li>
-                            <li className="flex items-center gap-x-4">
-                                <span className="w-5 h-5 text-xs flex items-center justify-center rounded-full bg-sky-700 text-white">✓</span>
-                                Advantage 2
-                            </li>
-                            <li className="flex items-center gap-x-4">
-                                <span className="w-5 h-5 text-xs flex items-center justify-center rounded-full bg-sky-700 text-white">✓</span>
-                                Advantage 3
-                            </li>
-                        </ul>
-                        <div className="font-bold text-2xl text-gray-900">
-                            <span>R750 Per Session</span>
-                        </div>
-                    </div>
-                    <div className="flex md:justify-end md:items-center">
-                        <a href="/ContactUs" className="h-10 px-5 text-sky-700 rounded-lg bg-gray-100 border border-gray-200 flex items-center outline-none">
-                            Book ABC
-                        </a>
-                    </div>
-                </div>
-                <div className="py-4 grid items-center md:grid-cols-3 lg:grid-cols-5 gap-6">
-                    <div className="md:col-span-2 lg:col-span-1">
-                        <h2 className="font-bold text-2xl text-gray-900 ">Plan DEF</h2>
-                    </div>
-                    <div className="text-gray-700 md:col-span-2 lg:col-span-3 md:items-center grid gap-6 md:grid-cols-3">
-                        <ul className="space-y-3 md:col-span-2">
-                            <li className="flex items-center gap-x-4">
-                                <span className="w-5 h-5 text-xs flex items-center justify-center rounded-full bg-sky-700 text-white">✓</span>
-                                Advantage  1
-                            </li>
-                            <li className="flex items-center gap-x-4">
-                                <span className="w-5 h-5 text-xs flex items-center justify-center rounded-full bg-sky-700 text-white">✓</span>
-                                Advantage 2
-                            </li>
-                            <li className="flex items-center gap-x-4">
-                                <span className="w-5 h-5 text-xs flex items-center justify-center rounded-full bg-sky-700 text-white">✓</span>
-                                Advantage 3
-                            </li>
-                        </ul>
-                        <div className="font-bold text-2xl text-gray-900">
-                            <span>R1500 Per Session</span>
-                        </div>
-                    </div>
-                    <div className="flex md:justify-end md:items-center">
-                        <Link href="/ContactUs" className="h-10 px-5 rounded-lg text-white bg-sky-700 border-gray-200 flex items-center outline-none">
-                            Book DEF
-                        </Link>
-                    </div>
-                </div>
-                <div className="py-4 grid items-center md:grid-cols-3 lg:grid-cols-5 gap-6">
-                    <div className="md:col-span-2 lg:col-span-1">
-                        <h2 className="font-bold text-2xl text-gray-900">Plan XYZ</h2>
-                    </div>
-                    <div className="text-gray-700 md:col-span-2 lg:col-span-3 md:items-center grid gap-6 md:grid-cols-3">
-                        <ul className="space-y-3 md:col-span-2">
-                            <li className="flex items-center gap-x-4">
-                                <span className="w-5 h-5 text-xs flex items-center justify-center rounded-full bg-sky-700 text-white">✓</span>
-                                Advantage  1
-                            </li>
-                            <li className="flex items-center gap-x-4">
-                                <span className="w-5 h-5 text-xs flex items-center justify-center rounded-full bg-sky-700 text-white">✓</span>
-                                Advantage 2
-                            </li>
-                            <li className="flex items-center gap-x-4">
-                                <span className="w-5 h-5 text-xs flex items-center justify-center rounded-full bg-sky-700 text-white">✓</span>
-                                Advantage 3
-                            </li>
-                        </ul>
-                        <div className="font-bold text-2xl text-gray-900">
-                            <span>R1000 Per Session</span>
-                        </div>
-                    </div>
-                    <div className="flex md:justify-end md:items-center">
-                        <Link href="/ContactUs" className="h-10 px-5 text-sky-700 rounded-lg bg-gray-100 border border-gray-200 flex items-center outline-none">
-                            Book XYZ
-                        </Link>
-                    </div>
-                </div>
-            </div>
+  return (
+    <section className="mt-15 py-20">
+      <div className="max-w-7xl mx-auto px-5 sm:px-10 md:px-12">
+        <div className="mb-12 md:flex md:justify-between gap-8">
+          <h1 className="text-4xl font-bold text-gray-800">
+            Services Designed for <br />
+            <span className="bg-gradient-to-br from-blue-700 via-blue-400 to-teal-600 bg-clip-text text-transparent">
+              Your Health & Performance
+            </span>
+          </h1>
+          <p className="text-gray-700 max-w-xl pt-5 md:pt-0">
+            {"CARE Therapy brings individualized, mobile care to you — whether you\’re managing a chronic condition, recovering from injury, or looking to move and live better. Each service is guided by clinical expertise and a personal approach."}
+          </p>
         </div>
+
+        <div className="space-y-4 divide-y divide-gray-200">
+          {services.map((service, index) => (
+            <div key={index} className="pt-8 grid gap-6 md:grid-cols-5">
+              <div className="md:col-span-2">
+                <h2 className="text-2xl font-bold text-gray-900 mb-2">{service.title}</h2>
+                <p className="text-gray-600">{service.description}</p>
+              </div>
+
+              <div className="md:col-span-3">
+                <ul className="space-y-3 text-gray-700 mb-4">
+                  {service.features.map((feature, i) => (
+                    <li key={i} className="flex items-start gap-3">
+                      <span className="bg-sky-700 text-white w-5 h-5 flex items-center justify-center text-xs rounded-full mt-1">
+                        ✓
+                      </span>
+                      <span>{feature}</span>
+                    </li>
+                  ))}
+                </ul>
+
+                <div className="flex flex-col mb-4 sm:flex-row sm:items-center sm:justify-between gap-4">
+                  <div className="font-bold text-xl text-gray-900">{service.price}</div>
+                  <Link href={service.cta} className="px-5 py-2 text-sm font-semibold text-white bg-sky-700 rounded-lg hover:bg-sky-800 transition">
+                    Enquire
+                  </Link>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
     </section>
-)
-}
- 
-export default OurServices
+  );
+};
+
+export default OurServices;
