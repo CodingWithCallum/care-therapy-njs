@@ -1,6 +1,5 @@
 import "../globals.css";
 import Image from "next/image";
-import Link from "next/link";
 
 export default function ContactUs() {
   return (
@@ -13,7 +12,7 @@ export default function ContactUs() {
               Get in Touch with <span className="text-transparent bg-clip-text bg-gradient-to-br from-blue-700 via-blue-400 to-teal-600">CARE Therapy</span>
             </h1>
             <p className="mt-4 text-lg text-gray-600">
-              Whether you're ready to book or just have a question — we're here for you.
+              {"Whether you\'re ready to book or just have a question \— we\'re here for you."}
             </p>
           </div>
 
