@@ -3,14 +3,7 @@ import Image from "next/image";
 
 export default function OurStory() {
   return (
-    <section className="py-20 mt-15">
-      <head>
-        <title>CARE Therapy | About</title>
-        <meta name="description" content="CARE Therapy - About Us, Our Story, And Our Specialist." />
-        <meta property="og:title" content="CARE Therapy About Page And Our Specialist."/>
-        <meta property="og:description" content="CARE Therapy About Us Page Featuring Our Story And Our Specialist"/>
-        <meta property="og:image" content="/"/>
-      </head>
+    <section className="">
       <div className="max-w-7xl mx-auto px-5 sm:px-10 md:px-12 lg:px-5">
         <h1 className="text-4xl sm:text-5xl xl:text-6xl font-bold text-gray-900 text-center mb-10">
           <span className="text-transparent bg-clip-text bg-gradient-to-br from-blue-700 via-blue-400 to-teal-600">

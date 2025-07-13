@@ -3,15 +3,7 @@ import Image from "next/image";
 
 export default function ContactUs() {
   return (
-    <main>
-      <section className="py-20 mt-15">
-        <head>
-          <title>CARE Therapy | Contact</title>
-          <meta name="description" content="CARE Therapy - Contact Us." />
-          <meta property="og:title" content="CARE Therapy Contact Us"/>
-          <meta property="og:description" content="CARE Therapy Contact Page and Bookings."/>
-          <meta property="og:image" content="/"/>
-        </head>
+      <section className="">
         <div className="max-w-7xl mx-auto px-5 sm:px-10 md:px-12 lg:px-5">
           {/* Header */}
           <div className="text-center mb-16 max-w-3xl mx-auto">
@@ -95,7 +87,6 @@ export default function ContactUs() {
           </div>
         </div>
       </section>
-    </main>
   );
 }
 

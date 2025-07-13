@@ -13,7 +13,7 @@ export default function Home() {
         <meta property="og:description" content="CARE Therapy Home Page For Clinical and Adapted Therapy"/>
         <meta property="og:image" content="/"/>
       </head>
-      <div className="">
+      <div className="" data-theme="light">
           <Hero/>
           <Feature/>
           <Testimonials/>

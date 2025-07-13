@@ -1,6 +1,6 @@
 export default function NotFound() {
     return (
-        <section>
+        <section data-theme="light">
             <head>
                 <title>CARE Therapy | About</title>
                 <meta name="description" content="CARE Therapy - Our Services, Offering Information, And Pricing." />

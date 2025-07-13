@@ -25,7 +25,7 @@ const footerLinks = [
  
 const Footer = () => {
         return (
-            <footer className="footer footer-horizontal footer-center bg-base-200 text-base-content rounded p-10" role="contentinfo">
+            <footer data-theme="light" className="footer footer-horizontal footer-center text-base-content rounded p-10" role="contentinfo">
                 <div className="grid grid-flow-row gap-5">
                     <nav className="grid grid-flow-col gap-4" aria-label="Footer navigation">
                         {footerLinks.map(({ id, text, link }) => (
