@@ -11,11 +11,7 @@ export default function NavLinks({ onClick }: { onClick?: () => void }) {
     <ul className="flex flex-col gap-y-6 text-lg text-gray-700 lg:flex-row lg:gap-x-6 lg:items-center lg:text-base">
       {links.map((link) => (
         <li key={link.name}>
-          <Link
-            href={link.href}
-            onClick={onClick}
-            className="transition hover:text-gray-900 ease-linear block"
-          >
+          <Link href={link.href} onClick={onClick} className="transition hover:text-gray-900 ease-linear block">
             {link.name}
           </Link>
         </li>

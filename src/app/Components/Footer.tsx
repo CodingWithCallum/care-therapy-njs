@@ -25,7 +25,7 @@ const footerLinks = [
  
 const Footer = () => {
         return (
-            <footer data-theme="light" className="footer footer-horizontal footer-center text-base-content rounded p-10" role="contentinfo">
+            <footer data-theme="light" className="footer bg-gray-100 footer-horizontal footer-center text-base-content rounded p-10" role="contentinfo">
                 <div className="grid grid-flow-row gap-5">
                     <nav className="grid grid-flow-col gap-4" aria-label="Footer navigation">
                         {footerLinks.map(({ id, text, link }) => (
@@ -36,7 +36,7 @@ const Footer = () => {
                     </nav>
                     <nav aria-label="Social media" className="grid grid-flow-col gap-4">
                     {footerSocials.map(({ id, url, social, icon }) => (
-                        <a key={id} href={url} target="_blank" rel="noopener noreferrer" aria-label={`Visit us on ${social}`} className="hover:text-teal-600 transition-colors">
+                        <a key={id} href={url} target="_blank" rel="noopener noreferrer" aria-label={`Visit us on ${social}`} className="hover:text-sky-600 transition-colors">
                             {icon}
                             <span className="sr-only">{social}</span>
                         </a>

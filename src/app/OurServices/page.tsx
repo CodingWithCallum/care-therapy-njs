@@ -1,5 +1,6 @@
 import "../globals.css";
 import Link from "next/link";
+import 'material-symbols';
 
 const services = [
   {
@@ -58,7 +59,7 @@ const OurServices = () => {
         <div className="mb-12 md:flex md:justify-between gap-8">
           <h1 className="text-4xl font-bold text-gray-800">
             Services Designed for <br />
-            <span className="bg-gradient-to-br from-blue-700 via-blue-400 to-teal-600 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-br from-teal-600 via-sky-700 to-blue-900 bg-clip-text text-transparent">
               Your Health & Performance
             </span>
           </h1>
@@ -79,17 +80,17 @@ const OurServices = () => {
                 <ul className="space-y-3 text-gray-700 mb-4">
                   {service.features.map((feature, i) => (
                     <li key={i} className="flex items-start gap-3">
-                      <span className="bg-sky-700 text-white w-5 h-5 flex items-center justify-center text-xs rounded-full mt-1">
-                        ✓
+                      <span className="bg-sky-700 text-white w-6 h-6 text-xs flex rounded-full mt-1 material-symbols-outlined">
+                        check_small
                       </span>
-                      <span>{feature}</span>
+                      <span className="mt-1">{feature}</span>
                     </li>
                   ))}
                 </ul>
 
                 <div className="flex flex-col mb-4 sm:flex-row sm:items-center sm:justify-between gap-4">
                   <div className="font-bold text-xl text-gray-900">{service.price}</div>
-                  <Link href={service.cta} className="px-5 py-2 text-sm font-semibold text-white bg-sky-700 rounded-lg hover:bg-sky-800 transition">
+                  <Link href={service.cta} className="btn btn-primary">
                     Enquire
                   </Link>
                 </div>

@@ -1,12 +1,13 @@
 import "../globals.css";
 import Image from "next/image";
+import 'material-symbols';
 
 export default function OurStory() {
   return (
     <section className="">
       <div className="max-w-7xl mx-auto px-5 sm:px-10 md:px-12 lg:px-5">
         <h1 className="text-4xl sm:text-5xl xl:text-6xl font-bold text-gray-900 text-center mb-10">
-          <span className="text-transparent bg-clip-text bg-gradient-to-br from-blue-700 via-blue-400 to-teal-600">
+          <span className="text-transparent bg-clip-text bg-gradient-to-br from-teal-600 via-sky-700 to-blue-900">
             {["CARE Therapy\’s Story"]}
           </span>
         </h1>
@@ -26,7 +27,7 @@ export default function OurStory() {
               "CARE Therapy adapts to each client\’s goals and environment, ideal for elderly individuals, post-injury recovery, or young athletes."
             ].map((point, i) => (
               <li key={i} className="flex items-start gap-3">
-                <Image src="/arrow-small-right.png" alt="Bullet arrow icon" width={20} height={20} className="mt-1" />
+                <span className="text-gray-900 material-symbols-outlined">arrow_right_alt</span>
                 <p>{point}</p>
               </li>
             ))}

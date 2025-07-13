@@ -26,15 +26,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" data-theme="light">
+    <html lang="en" data-theme="corporate">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <header data-theme="light" className="h-24">
+        <header data-theme="corporate" className="h-24">
           <Navbar2/>
         </header>
-        <main data-theme="light" className="pt-10">
+        <main data-theme="corporate" className="py-10">
           {children}
         </main>
-        <Footer data-theme="light"/>
+        <Footer data-theme="corporate"/>
       </body>
     </html>
   );

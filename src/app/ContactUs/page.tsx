@@ -8,7 +8,7 @@ export default function ContactUs() {
           {/* Header */}
           <div className="text-center mb-16 max-w-3xl mx-auto">
             <h1 className="text-4xl/tight sm:text-5xl/tight font-bold text-gray-900">
-              Get in Touch with <span className="text-transparent bg-clip-text bg-gradient-to-br from-blue-700 via-blue-400 to-teal-600">CARE Therapy</span>
+              Get in Touch with <span className="text-transparent bg-clip-text bg-gradient-to-br from-teal-600 via-sky-700 to-blue-900">CARE Therapy</span>
             </h1>
             <p className="mt-4 text-lg text-gray-600">
               {"Whether you\'re ready to book or just have a question \— we\'re here for you."}
@@ -19,13 +19,7 @@ export default function ContactUs() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
             {/* Left Column - Image */}
             <div className="rounded-xl overflow-hidden shadow-sm">
-              <Image
-                src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?q=80&w=1170&auto=format&fit=crop"
-                width={1000}
-                height={600}
-                alt="Contact CARE Therapy"
-                className="w-full h-full object-cover"
-              />
+              <Image src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?q=80&w=1170&auto=format&fit=crop" width={1000} height={600} alt="Contact CARE Therapy" className="w-full h-full object-cover"/>
             </div>
 
             {/* Right Column - Contact Details */}
@@ -47,7 +41,7 @@ export default function ContactUs() {
               </div>
 
               {/* Contact Info */}
-              <div className="p-6 rounded-xl bg-white border border-gray-100 shadow-sm space-y-6">
+              <div className="p-6 rounded-xl bg-white border border-gray-100 shadow-sm space-y-3">
                 <h2 className="text-2xl font-semibold text-gray-900">Contact Information</h2>
 
                 {/* Email */}
@@ -58,10 +52,7 @@ export default function ContactUs() {
                   </svg>
                   <div>
                     <p className="text-sm text-gray-600">Email</p>
-                    <a
-                      href="mailto:caretherapysa@gmail.com"
-                      className="text-base font-medium text-gray-900 underline hover:text-blue-700"
-                    >
+                    <a href="mailto:caretherapysa@gmail.com" className="text-base font-medium text-gray-900 underline hover:text-blue-700">
                       caretherapysa@gmail.com
                     </a>
                   </div>
@@ -74,10 +65,7 @@ export default function ContactUs() {
                   </svg>
                   <div>
                     <p className="text-sm text-gray-600">Phone</p>
-                    <a
-                      href="tel:+27797908846"
-                      className="text-base font-medium text-gray-900 underline hover:text-teal-600"
-                    >
+                    <a href="tel:+27797908846" className="text-base font-medium text-gray-900 underline hover:text-teal-600">
                       +27 79 790 8846
                     </a>
                   </div>

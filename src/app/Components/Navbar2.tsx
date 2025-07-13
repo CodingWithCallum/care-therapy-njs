@@ -27,25 +27,22 @@ export default function Navbar() {
 
           {/* Center Nav + CTA (only visible on lg+) */}
           <div className="hidden lg:flex flex-1 justify-center items-center relative h-full">
-            <NavLinks />
+            <NavLinks/>
           </div>
 
           {/* CTA (Right) */}
           <div className="hidden lg:flex min-w-max">
-            <ContactCTA />
-          </div>
-
-          {/* Mobile Menu (absolute full-screen) */}
-          <div
-            id="main-menu"
-            className={clsx(
-              "fixed inset-0 top-0 bg-white py-24 px-6 sm:px-10 md:px-14 transition-all duration-300 ease-linear flex flex-col gap-y-10 text-gray-700", "lg:hidden", {"opacity-100 visible translate-y-0": open, "opacity-0 invisible -translate-y-10": !open,})}>
-            <NavLinks onClick={() => setOpen(false)} />
             <ContactCTA/>
           </div>
 
+          {/* Mobile Menu (absolute full-screen) */}
+          <div id="main-menu" className={clsx("fixed inset-0 top-0 bg-white py-24 px-6 sm:px-10 md:px-14 transition-all duration-300 ease-linear flex flex-col gap-y-10 text-gray-700", "lg:hidden", {"opacity-100 visible translate-y-0": open, "opacity-0 invisible -translate-y-10": !open,})}>
+            <NavLinks onClick={() => setOpen(false)}/>
+            <ContactCTA onClick={() => setOpen(false)}/>
+          </div>
+
           {/* Mobile Toggle Button */}
-          <MobileToggle open={open} setOpen={setOpen} />
+          <MobileToggle open={open} setOpen={setOpen}/>
         </nav>
       </div>
     </header>
