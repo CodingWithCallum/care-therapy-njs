@@ -82,7 +82,7 @@ return (
                     </p>
                     <div className="flex">
                         <Link href="/OurServices" className="bg-teal-600 text-white border border-teal-500 rounded-full px-6 h-12 flex w-max items-center">
-                            Learn More
+                            More About Our Services
                         </Link>
                     </div>
                 </div>
