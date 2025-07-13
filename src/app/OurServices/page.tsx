@@ -54,6 +54,13 @@ const services = [
 const OurServices = () => {
   return (
     <section className="mt-15 py-20">
+      <head>
+        <title>CARE Therapy | Services</title>
+        <meta name="description" content="CARE Therapy - Our Services, Offering Information, And Pricing." />
+        <meta property="og:title" content="CARE Therapy Services"/>
+        <meta property="og:description" content="CARE Therapy Services, Our Pricing, And Our Offerings."/>
+        <meta property="og:image" content="/"/>
+      </head>
       <div className="max-w-7xl mx-auto px-5 sm:px-10 md:px-12">
         <div className="mb-12 md:flex md:justify-between gap-8">
           <h1 className="text-4xl font-bold text-gray-800">
