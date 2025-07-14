@@ -20,10 +20,10 @@ export default function OurStory() {
 
           <ul className="space-y-4 text-gray-700">
             {[
-              "We aim to bridge the gap between rehabilitation and fitness by offering expert-guided, proactive exercise therapy in real-world settings.",
+              "Care Therapy aim to bridge the gap between rehabilitation and fitness by offering expert-guided, proactive exercise therapy in real-world settings.",
               "Unlike physiotherapy, which typically focuses on acute injuries, CARE Therapy emphasizes long-term movement health and performance enhancement.",
-              "We prioritize preventative care: improving posture, strength, balance, and mobility before issues become disabling.",
-              "We bring the service to you — at home, in community settings, or on the field.",
+              "CARE Therapy prioritize preventative care: improving posture, strength, balance, and mobility before issues become disabling.",
+              "CARE Therapy bring the service to you — at home, in community settings, or on the field.",
               "CARE Therapy adapts to each client\’s goals and environment, ideal for elderly individuals, post-injury recovery, or young athletes."
             ].map((point, i) => (
               <li key={i} className="flex items-start gap-3">
@@ -42,13 +42,13 @@ export default function OurStory() {
           <div className="flex-1 space-y-5">
             <h2 className="text-3xl font-bold text-gray-900">Meet Our Specialist</h2>
             <p>
-            {"My name is Cameron, I am a Clinical \/ Adaptive Exercise Specialist and Founder of CARE Therapy, with a strong foundation in rehabilitative and adapted movement. I hold an MSc in Kinesiology with a specialization in Adapted Physical Activity, and earned my undergraduate and Honours degrees in Human Kinetics and Ergonomics from Rhodes University."}
+            {"My name is "}<strong>{"Cameron"}</strong>{", I am a Clinical \/ Adaptive Exercise "}<strong>{"Specialist"}</strong>{" and "}<strong>{"Founder"}</strong>{" of CARE Therapy, with a strong foundation in rehabilitative and adapted movement. I hold an MSc in Kinesiology with a specialization in Adapted Physical Activity from "}<strong>{"California State University"}</strong>{", and earned my Undergraduate and Honours degrees in Human Kinetics and Ergonomics from "}<strong>{"Rhodes University."}</strong>
             </p>
             <p>
-              {"With professional experience in personal training and athletic performance since 2019, and a clinical focus on therapeutic and adapted exercise since 2022, I bring both scientific expertise and personal insight to my work. As a former Varsity Shield and U.S. Division II rugby player, I understand the physical demands of performance and the journey through injury recovery."}
+              {"With professional experience in personal training and athletic performance since 2019, and a clinical focus on therapeutic and adapted exercise since 2022, I bring both scientific expertise and personal insight to my work. As a former "}<strong>{"Varsity Shield"}</strong>{" and "}<strong>{"U.S. Division II"}</strong>{" rugby player, I understand the physical demands of performance and the journey through injury recovery."}
             </p>
             <p>
-              {"My adapted exercise experience includes working at the renowned Center of Achievement in California, where I provided specialized support for individuals with neurological and physical disabilities. I now lead CARE Therapy with a commitment to holistic, evidence-based care that bridges rehabilitation, functional movement, and performance enhancement."}
+              {"My adapted exercise experience includes working at the renowned "}<strong>{"Center of Achievement in California"}</strong>{", where I provided specialized support for individuals with neurological and physical disabilities. I now lead CARE Therapy with a commitment to "}<strong>{"holistic, evidence-based care"}</strong>{" that bridges rehabilitation, functional movement, and performance enhancement."}
             </p>
           </div>
           <div className="flex-shrink-0 w-full max-w-xs md:max-w-sm lg:max-w-md">
@@ -70,11 +70,12 @@ export default function OurStory() {
             <div className="grid gap-6 bg-white p-4 border rounded-xl">
               {[{
                 title: "Rhodes University, South Africa",
-                degree: "B.SocSci in Human Kinetics and Ergonomics (Hons) & Psychology",
+                degree: "B.SocSci Human Kinetics and Ergonomics & Psychology",
+                degree2: "B.SocSci Honours Human Kinetics & Ergonomics",
                 icon: "🏛️"
               }, {
                 title: "California State University, USA",
-                degree: "MSc in Kinesiology: Adapted Physical Activity",
+                degree: "MSc Kinesiology: Adapted Physical Activity",
                 icon: "🎓"
               }].map((edu, i) => (
                 <div key={i} className="flex gap-4 items-start">
@@ -82,6 +83,7 @@ export default function OurStory() {
                   <div>
                     <h3 className="text-lg font-semibold text-gray-900">{edu.title}</h3>
                     <p>{edu.degree}</p>
+                    <p>{edu.degree2}</p>
                   </div>
                 </div>
               ))}

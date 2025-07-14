@@ -12,11 +12,11 @@ const services = [
       "Individualised progression plans",
       "Ideal for seniors, stroke survivors, and individuals with SCI, MS, Parkinson\’s, arthritis, frailty...",
     ],
-    price: "R650 \– R800 per session \(fuel\/distance dependent\)",
+    price: "R650 \– R800 per session *",
     cta: "/ContactUs",
   },
   {
-    title: "Assisted Stretching for Flexibility \& Range of Motion (ROM)",
+    title: "Assisted Stretch & Flexibility Therapy",
     description: "Hands-on flexibility therapy to reduce stiffness, improve neuromuscular control, and enhance overall mobility.",
     features: [
       "Neuromuscular re-education",
@@ -24,7 +24,7 @@ const services = [
       "Enhanced mobility and increased ROM for active or sedentary clients",
       "Complementary to rehabilitation and athletic training",
     ],
-    price: "R250 \(30 min\) \| R400 \(60 min\)",
+    price: "30 Minutes: R250 \| 60 Minutes: R400",
     cta: "/ContactUs",
   },
   {
@@ -36,7 +36,7 @@ const services = [
       "Speed, agility, and proprioception development",
       "Return\-to\-play strategies and performance tracking",
     ],
-    price: "R650 \– R800 per session \(fuel\/distance dependent\)",
+    price: "R650 \– R800 per session *",
     cta: "/ContactUs",
   },
   {
@@ -97,6 +97,8 @@ const OurServices = () => {
               </div>
             </div>
           ))}
+          {/* ASTERIX: 
+          - Pricing varies based on location and travel times. Contact us for pricing in your area. */}
         </div>
       </div>
     </section>

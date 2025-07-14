@@ -47,7 +47,7 @@ const Footer = () => {
                             caretherapysa@gmail.com
                         </a>
                         <a href="tel:+27797908846" aria-label="Call CARE Therapy">
-                            +27-79-790-8846
+                            +27 79 790 8846
                         </a>
                     </address>
                     <aside>
