@@ -1,7 +1,6 @@
 import "../globals.css";
 import Link from "next/link";
-import 'material-symbols';
-
+import {Check} from 'lucide-react';
 const services = [
   {
     title: "Adapted Exercise Therapy",
@@ -80,9 +79,7 @@ const OurServices = () => {
                 <ul className="space-y-3 text-gray-700 mb-4">
                   {service.features.map((feature, i) => (
                     <li key={i} className="flex items-start gap-3">
-                      <span className="bg-sky-700 text-white w-6 h-6 text-xs flex rounded-full mt-1 material-symbols-outlined">
-                        check_small
-                      </span>
+                      <Check/>
                       <span className="mt-1">{feature}</span>
                     </li>
                   ))}
@@ -100,8 +97,6 @@ const OurServices = () => {
           <div>
             <p>* Pricing varies based on location and travel times. Contact us for pricing in your area. </p>
           </div>
-          {/* ASTERIX: 
-          - Pricing varies based on location and travel times. Contact us for pricing in your area. */}
         </div>
       </div>
     </section>

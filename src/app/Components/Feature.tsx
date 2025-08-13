@@ -1,24 +1,24 @@
 import Link from "next/link";
 import "../globals.css";
-import 'material-symbols';
+import {Activity, HeartHandshake, Bike, Ambulance } from "lucide-react";
 
 const iconRender = (val: string) => {
 switch (val) {
     case "exercise-ico":
         return (
-                <span className="material-symbols-rounded">fitness_center</span>
+            <Activity/>
         )
     case "stretch-ico":
         return (
-            <span className="material-symbols-rounded">sports_gymnastics</span>
+            <HeartHandshake/>
         )
     case "sports-ico":
         return (
-            <span className="material-symbols-rounded">sports_rugby</span>
+            <Bike/>
         )
     case "injury-ico":
         return (
-            <span className="material-symbols-rounded">personal_injury</span>
+            <Ambulance/>
         )
     default:
         return <>No Icon</>;

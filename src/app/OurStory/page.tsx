@@ -1,6 +1,6 @@
 import "../globals.css";
 import Image from "next/image";
-import 'material-symbols';
+import {ArrowBigRight} from 'lucide-react';
 
 export default function OurStory() {
   return (
@@ -27,7 +27,7 @@ export default function OurStory() {
               "CARE Therapy adapts to each client\’s goals and environment, ideal for elderly individuals, post-injury recovery, or young athletes."
             ].map((point, i) => (
               <li key={i} className="flex items-start gap-3">
-                <span className="text-gray-900 material-symbols-outlined">arrow_right_alt</span>
+                <span className="text-gray-900"><ArrowBigRight/></span>
                 <p>{point}</p>
               </li>
             ))}
