@@ -1,6 +1,6 @@
 import "../globals.css";
 import Image from "next/image";
-import {ArrowBigRight} from 'lucide-react';
+import {ArrowBigRight, University, GraduationCap} from 'lucide-react';
 
 export default function OurStory() {
   return (
@@ -72,11 +72,11 @@ export default function OurStory() {
                 title: "Rhodes University, South Africa",
                 degree: "B.SocSci Human Kinetics and Ergonomics & Psychology",
                 degree2: "B.SocSci Honours Human Kinetics & Ergonomics",
-                icon: "🏛️"
+                icon: <University/>
               }, {
                 title: "California State University, USA",
                 degree: "MSc Kinesiology: Adapted Physical Activity",
-                icon: "🎓"
+                icon: <GraduationCap/>
               }].map((edu, i) => (
                 <div key={i} className="flex gap-4 items-start">
                   <span className="bg-gray-900 text-white p-3 rounded-full">{edu.icon}</span>

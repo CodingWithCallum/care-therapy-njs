@@ -4,19 +4,19 @@ import React, { useState } from 'react';
 
 const testimonials = [
   {
-    name: 'Callum Barry',
+    name: 'Callum Barry, 27',
     role: 'Software Developer',
     quote: 'Cameron helped me start my training plan to rebuild my running strength after a period of time away from running due to injury. Within weeks, I noticed significant improvements and recently started to run more freely with less pain. His insights into running form and strength training have been invaluable. I highly recommend him to anyone looking to improve their performance or return from injury.',
     image: '',
   },
   {
-    name: 'Tara Pohl',
+    name: 'Tara Pohl, 25',
     role: 'Medical Officer Intern',
     quote: 'Cameron has been instrumental in my recovery from a sports injury. His expertise in rehabilitation and personalized training plans have made a significant difference in my progress readying myself for my next trail run later this year. I highly recommend him to anyone looking to improve their fitness or recover from an injury.',
     image: '',
   },
   {
-    name: 'Joan',
+    name: 'Joan, 85',
     role: '',
     quote: 'Before working with Cameron, I had been living with vertigo and drop foot. I was unsteady and becoming increasingly reliant on my cane for walking. Since starting our sessions, my balance and walking have improved so much that I now only use my cane occasionally. I feel stronger, more stable, and more confident moving throughout my day. I’m also sleeping better, feeling more positive, and experiencing far less pain.',
     image: '',
