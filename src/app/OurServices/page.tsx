@@ -24,7 +24,7 @@ const services = [
       "Enhanced mobility and increased ROM for active or sedentary clients",
       "Complementary to rehabilitation and athletic training",
     ],
-    price: "30 Minutes: R250 \| 60 Minutes: R400",
+    price: "30 Minutes: R250 \| 60 Minutes: R400 *",
     cta: "/ContactUs",
   },
   {
@@ -47,7 +47,7 @@ const services = [
       "Ongoing or chronic pain management",
       "Functional return after orthopedic or neurological rehab",
     ],
-    price: "R800 per session",
+    price: "R800 per session *",
     cta: "/ContactUs",
   },
 ];
@@ -97,6 +97,9 @@ const OurServices = () => {
               </div>
             </div>
           ))}
+          <div>
+            <p>* Pricing varies based on location and travel times. Contact us for pricing in your area. </p>
+          </div>
           {/* ASTERIX: 
           - Pricing varies based on location and travel times. Contact us for pricing in your area. */}
         </div>

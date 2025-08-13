@@ -6,15 +6,21 @@ const testimonials = [
   {
     name: 'Callum Barry',
     role: 'Software Developer',
-    quote: 'Cameron helped me start my training plan to rebuild my running strength after an injury. Within 4 weeks, I noticed significant improvements.',
+    quote: 'Cameron helped me start my training plan to rebuild my running strength after a period of time away from running due to injury. Within weeks, I noticed significant improvements and recently started to run more freely with less pain. His insights into running form and strength training have been invaluable. I highly recommend him to anyone looking to improve their performance or return from injury.',
     image: '',
   },
   {
     name: 'Tara Pohl',
-    role: 'Medical Officer',
-    quote: 'Cameron has been instrumental in my recovery from a sports injury. His expertise in rehabilitation and personalized training plans have made a significant difference.',
+    role: 'Medical Officer Intern',
+    quote: 'Cameron has been instrumental in my recovery from a sports injury. His expertise in rehabilitation and personalized training plans have made a significant difference in my progress readying myself for my next trail run later this year. I highly recommend him to anyone looking to improve their fitness or recover from an injury.',
     image: '',
   },
+  {
+    name: 'Joan',
+    role: '',
+    quote: 'Before working with Cameron, I had been living with vertigo and drop foot. I was unsteady and becoming increasingly reliant on my cane for walking. Since starting our sessions, my balance and walking have improved so much that I now only use my cane occasionally. I feel stronger, more stable, and more confident moving throughout my day. I’m also sleeping better, feeling more positive, and experiencing far less pain.',
+    image: '',
+  }
 ];
 
 const TestimonialSlider = () => {
@@ -38,7 +44,7 @@ const TestimonialSlider = () => {
                   <h3 className="text-xl font-semibold text-gray-800">{testimonial.name}</h3>
                   <cite className="text-sm text-sky-600 not-italic">{testimonial.role}</cite>
                 </header>
-                <p className="text-center italic text-gray-600 max-w-xs mx-auto">“{testimonial.quote}”</p>
+                <p className="text-center italic text-gray-600 max-w-sm mx-auto">“{testimonial.quote}”</p>
               </blockquote>
             </article>
           ))}
